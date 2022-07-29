@@ -4,11 +4,242 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Glosarium</title>
 </head>
 <body>  
-
+    <section class="header">
+        <div class="container header__inner">
+            <div class="header__logo">
+                <a href="index.html"><h1>გლოსარიუმი</h1></a>
+            </div>
+            <ul class="header__nav">
+                <a href="index.html"><li class="header__nav__wrapper--link active">მთავარი გვერდი</li></a>
+                <a href="#"><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a>
+                <a href="#"><li class="header__nav__wrapper--link">გლოსარიუმი</li></a>
+                <a href="#"><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a>
+                <a href="#"><li class="header__nav__wrapper--link">კონტაქტი</li></a>
+            </ul>
+        </div>
+    </section>
+    <section class="purple-box"></section>
+    <section class="main">
+        <div class="container main__inner">
+            <div class="main__title">
+                <p>უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი</p>
+            </div>
+            <div class="main__cover">
+                <div class="img"></div>
+            </div>
+        </div>
+    </section>
+    <section class="search">
+        <div class="container search__inner">
+            <div class="search__title title">
+                <h3>მოძებნე ქართული შესატყვისი სიტყვა</h3>
+            </div>
+            <div class="search__input">
+                <img src="images/icons/search.svg" alt="search">
+                <input type="search" name="search" placeholder="ჩაწერე საძიებო სიტყვა">
+            </div>
+            <div class="search__alphabet"> 
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container info__inner">
+            <div class="info__cover">
+                <div class="img"></div>
+            </div>
+            <div class="info__text">
+                <div class="info__text__title">
+                    <h3>რა არის უცხო სიტყვებისა და მათი ქართული შესატყვისების გლოსარიუმი?</h3>
+                </div>
+                <div class="info__text__p">
+                    <p>უცხო სიტყვას შეიძლება ჰქონდეს ერთზე მეტი მნიშვნელობა, თუმცა 
+                        მისი ქართული შესატყვისი ამ უცხო სიტყვის მხოლოდ ერთ, 
+                        ყველაზე გავრცელებულ მნიშვნელობას მიემართება გლოსარიუმში.</p>
+                </div>
+                <div class="info__text__more">
+                    <a href="#">ნახე მეტი...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="daily-word popular-word">
+        <div class="container daily-word__inner">
+            <div class="daily-word__title title">
+                <h3>ყველაზე ხშირად მოძებნადი სიტყვები</h3>
+            </div>
+            <div class="daily-word__wrapper">
+                <div class="daily-word__wrapper--box">
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/check-circle.svg" alt="check-circle">
+                        <span>გამოყენებული</span>
+                        <img src="images/icons/heart.svg" alt="heart">
+                    </div>
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/x-cross.svg" alt="x-cross">
+                        <span>აბსტრაქტული</span>
+                        <img src="images/icons/copy.svg" alt="copy">
+                    </div>
+                </div>
+                <div class="daily-word__wrapper--box">
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/check-circle.svg" alt="check-circle">
+                        <span>გამოყენებული</span>
+                        <img src="images/icons/heart.svg" alt="heart">
+                    </div>
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/x-cross.svg" alt="x-cross">
+                        <span>აბსტრაქტული</span>
+                        <img src="images/icons/copy.svg" alt="copy">
+                    </div>
+                </div>
+                <div class="daily-word__wrapper--box">
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/check-circle.svg" alt="check-circle">
+                        <span>გამოყენებული</span>
+                        <img src="images/icons/heart.svg" alt="heart">
+                    </div>
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/x-cross.svg" alt="x-cross">
+                        <span>აბსტრაქტული</span>
+                        <img src="images/icons/copy.svg" alt="copy">
+                    </div>
+                </div>
+            </div>
+            <div class="daily-word__full full-dictionary">
+                <a href="#">სრული გლოსარიუმი</a>
+            </div>
+        </div>
+    </section>
+    <section class="daily-word last-word">
+        <div class="container daily-word__inner">
+            <div class="daily-word__title title">
+                <h3>ბოლოს დამატებული სიტყვები</h3>
+            </div>
+            <div class="daily-word__wrapper">
+                <div class="daily-word__wrapper--box">
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/check-circle.svg" alt="check-circle">
+                        <span>გამოყენებული</span>
+                        <img src="images/icons/heart.svg" alt="heart">
+                    </div>
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/x-cross.svg" alt="x-cross">
+                        <span>აბსტრაქტული</span>
+                        <img src="images/icons/copy.svg" alt="copy">
+                    </div>
+                </div>
+                <div class="daily-word__wrapper--box">
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/check-circle.svg" alt="check-circle">
+                        <span>გამოყენებული</span>
+                        <img src="images/icons/heart.svg" alt="heart">
+                    </div>
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/x-cross.svg" alt="x-cross">
+                        <span>აბსტრაქტული</span>
+                        <img src="images/icons/copy.svg" alt="copy">
+                    </div>
+                </div>
+                <div class="daily-word__wrapper--box">
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/check-circle.svg" alt="check-circle">
+                        <span>გამოყენებული</span>
+                        <img src="images/icons/heart.svg" alt="heart">
+                    </div>
+                    <div class="daily-word__wrapper--box-content">
+                        <img src="images/icons/x-cross.svg" alt="x-cross">
+                        <span>აბსტრაქტული</span>
+                        <img src="images/icons/copy.svg" alt="copy">
+                    </div>
+                </div>
+            </div>
+            <div class="daily-word__full full-dictionary">
+                <a href="#">სრული გლოსარიუმი</a>
+            </div>
+        </div>
+    </section>
+    <section class="similar-word">
+        <div class="container similar-word__inner">
+            <div class="similar-word__title title">
+                <h3>შეუსაბამე სინონიმები ქართულ შესატყვისებს</h3>
+            </div>
+            <div class="similar-word__wrapper">
+                <div class="similar-word__left">
+                    <div class="similar-word__left--box similar-word--box">
+                        <p>განყენებული</p>
+                    </div>
+                    <div class="similar-word__left--box similar-word--box">
+                        <p>განყენებული</p>
+                    </div>
+                    <div class="similar-word__left--box similar-word--box">
+                        <p>განყენებული</p>
+                    </div>
+                </div>
+                <div class="similar-word__right">
+                    <div class="similar-word__right--box similar-word--box">
+                        <p>აბსტრაქტული</p>
+                    </div>
+                    <div class="similar-word__right--box similar-word--box">
+                        <p>აბსტრაქტული</p>
+                    </div>
+                    <div class="similar-word__right--box similar-word--box">
+                        <p>აბსტრაქტული</p>
+                    </div>
+                </div>
+            </div>
+            <div class="daily-word__full full-dictionary">
+                <a href="#">სრული გლოსარიუმი</a>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container footer__inner">
+            <footer>
+                <div class="footer__first-row">
+                    <div class="footer__first">
+                        <div class="footer__first__title">
+                            <h2>გლოსარიუმი</h2>
+                        </div>
+                        <div class="footer__first__socials">
+                            <a href="#"><img src="images/icons/Twitter.svg" alt="Twitter"></a>
+                            <a href="#"><img src="images/icons/Instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="images/icons/Linkedin.svg" alt="Linkedin"></a>
+                        </div>
+                        <div class="footer__first__rights">
+                            <p>ყველა უფლება დაცულია</p>
+                        </div>
+                    </div>
+                    <div class="footer__second">
+                        <div class="footer__second__uls">
+                            <ul>
+                                <a href="index.html"><li>მთავარი გვერდი</li></a>
+                                <a href="#"><li>ჩვენ შესახებ</li></a>
+                                <a href="#"><li>გლოსარიუმი</li></a>
+                                <a href="#"><li>ბლოგი</li></a>
+                            </ul>
+                            <ul>
+                                <li>კონტაქტი:</li>
+                                <a href="#"><li>+995 578 444 333</li></a>
+                                <a href="#"><li>info@glosariumi.ge</li></a>
+                            </ul>
+                            <div class="footer__input">
+                                <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
+                                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+                            </div>
+                        </div>
+                        <div class="footer__by">
+                            <p>გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების ცენტრის დახმარებით ან ინიციატივით. 
+                            </p>
+                        </div>
+                    </div>   
+                </div>  
+            </footer>
+        </div>
+    </section>
 <script src="js/main.js"></script>
 </body>
 </html>

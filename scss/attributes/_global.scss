@@ -1,0 +1,117 @@
+.container {
+    width: 100%;
+    max-width: 1348px;
+    margin: 0 auto;
+}
+a{
+    color:$black;
+}
+.title{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: $XLFont;
+    font-weight: bold;
+    h3{
+        text-align: center;
+    }
+}
+.full-dictionary{
+    padding: 47px 0;
+    font-size: $MFont;
+    font-style: italic;
+    a{
+        position: relative;
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        &::after{
+            content:' ';
+            display: block;
+            background: url("/images/icons/arrowright.svg") no-repeat;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            position: absolute;
+            top: -2px;
+            right: -7px;
+        }
+    }
+}
+.header{
+    padding: 45px 0;
+    color:$black;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        font-size:26px;
+    }
+    &__nav{
+        display: flex;
+        a{
+            margin: 0 25.5px;
+            font-size:18px;
+        }
+    }
+}
+
+.footer{
+    margin-top: 60px;
+    padding: 57px 0 23px 0;
+    background: $footerBackground;
+    color:#ffff;
+    &__first-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__first{
+        &__title{
+            font-size:$XLFont;
+        }
+        &__socials{
+            margin: 80px 0;
+            img{
+                margin-right: 20px;
+            }
+        }
+        &__rights{
+            font-size:14px;
+        }
+    }
+    &__second{
+       &__uls{
+           display: flex;
+           justify-content: space-between;
+           ul{
+               
+               li{
+                   margin: 12px 0;
+                   font-size:$SFont;
+               }
+               a{
+                   color:#ffff;
+               }
+           }
+       }
+    }
+    &__input{
+        width: 254px;
+        input{
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border-radius: 6px;
+            border:none;
+            margin-bottom: 20px;
+        }
+        a{
+            font-size:12px;
+            color:#ffff;
+        }
+    }
+    &__by{
+        margin-top: 90px;
+        font-style: italic;
+    }
+}
