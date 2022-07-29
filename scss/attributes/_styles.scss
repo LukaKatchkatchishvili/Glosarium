@@ -106,7 +106,7 @@
                 &::after{
                     content:' ';
                     display: block;
-                    background: url("images/icons/arrowright.svg") no-repeat;
+                    background: url("../images/icons/arrowright.svg") no-repeat;
                     width: 24px;
                     height: 24px;
                     cursor: pointer;
@@ -155,14 +155,18 @@
     }
     &__right{
         &--box{
+            cursor: move;
+            .draggable.dragging {
+                opacity: .5;
+            }
             position: relative;
             &::after{
                 content:' ';
                 display: block;
-                background: url("images/icons/arrowupanddown.svg") no-repeat;
+                background: url("../images/icons/arrowupanddown.svg") no-repeat;
                 width: 43px;
                 height: 24px;
-                cursor: pointer;
+                cursor: move;
                 position: absolute;
                 top: 50%;
                 left: -50px;

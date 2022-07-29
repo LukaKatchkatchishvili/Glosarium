@@ -176,7 +176,7 @@ a {
 .full-dictionary a::after {
   content: ' ';
   display: block;
-  background: url("/images/icons/arrowright.svg") no-repeat;
+  background: url("../images/icons/arrowright.svg") no-repeat;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -432,7 +432,7 @@ a {
 .info__text__more a::after {
   content: ' ';
   display: block;
-  background: url("/images/icons/arrowright.svg") no-repeat;
+  background: url("../images/icons/arrowright.svg") no-repeat;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -498,16 +498,21 @@ a {
 }
 
 .similar-word__right--box {
+  cursor: move;
   position: relative;
+}
+
+.similar-word__right--box .draggable.dragging {
+  opacity: .5;
 }
 
 .similar-word__right--box::after {
   content: ' ';
   display: block;
-  background: url("/images/icons/arrowupanddown.svg") no-repeat;
+  background: url("../images/icons/arrowupanddown.svg") no-repeat;
   width: 43px;
   height: 24px;
-  cursor: pointer;
+  cursor: move;
   position: absolute;
   top: 50%;
   left: -50px;
