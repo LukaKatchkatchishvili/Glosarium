@@ -155,23 +155,30 @@
     }
     &__right{
         &--box{
-            cursor: move;
-            .draggable.dragging {
-                opacity: .5;
-            }
             position: relative;
-            &::after{
-                content:' ';
-                display: block;
-                background: url("../images/icons/arrowupanddown.svg") no-repeat;
-                width: 43px;
-                height: 24px;
-                cursor: move;
+            cursor: move;
+            img{
                 position: absolute;
-                top: 50%;
-                left: -50px;
+                top:50%;
+                left:-50px;
                 transform: translateY(-50%);
             }
+            // .draggable.dragging {
+            //     opacity: .5;
+            // }
+            // position: relative;
+            // &::after{
+            //     content:' ';
+            //     display: block;
+            //     background: url("../images/icons/arrowupanddown.svg") no-repeat;
+            //     width: 43px;
+            //     height: 24px;
+            //     cursor: move;
+            //     position: absolute;
+            //     top: 50%;
+            //     left: -50px;
+            //     transform: translateY(-50%);
+            // }
         }
     }
     &--box{
