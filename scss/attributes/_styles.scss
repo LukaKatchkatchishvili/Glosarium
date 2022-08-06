@@ -1,0 +1,188 @@
+.purple-box{ 
+    width: 100%;
+    height: 60px;
+    background-color: #A29DC2;
+}
+.main{
+    background: $mainBackground;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 95px;
+    }
+    &__title{
+        margin-top: 160px;
+        p{
+            font-size:$XLFont;
+        }
+    }
+    &__cover{
+        width: 500px;
+        height: 327px;
+        background: $shadow;
+    }
+}
+.search{
+    margin: 50px 0;
+    padding-bottom: 23px;
+    background-color: $mainBackground;
+    &__title{
+        padding-top: 50px;
+        margin-bottom: 100px;
+        font-size: $XLFont;
+        font-weight: bold;
+        h3{
+            text-align: center;
+
+        }
+    }
+    &__input{
+        width: 893px;
+        position: relative;
+        margin: 0 auto;
+        img{
+            position: absolute;
+            top:50%;
+            left:30px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        input{
+            width: 100%;
+            padding: 33px 50px 33px 113px;
+            border: 1px solid $black;
+            border-radius: $border-radius;
+            background-color: $mainBackground;
+            font-size:$MFont;
+        }
+    }
+    &__alphabet{
+        margin-top: 100px;
+        padding: 23px;
+        background: #ffff;
+        border-radius: $border-radius;
+        box-shadow: 0px 4px 4px 0px #CFCBCB40;
+        font-size: 26px;
+        display: flex;
+        justify-content: space-between;
+        span{
+            cursor: pointer;
+            padding: 0 10px;
+        }
+    }
+}
+.info{
+    padding: 60px 0;
+    margin-bottom: 60px;
+    background-color: $mainBackground;
+    &__inner{
+        display: flex;
+    }
+    &__cover{
+        width: 402px;
+        height: 211px;
+        background: $shadow;
+        border-radius: $border-radius;
+    }
+    &__text{
+        margin-left: 144px;
+        &__title{
+            width: 535px;
+            font-size:$LFont;
+            font-weight: bold;
+        }
+        &__p{
+            width: 677px;
+            margin: 77px 0 54px 0;
+            font-size:20px;
+            line-height: 24px;
+        }
+        &__more{
+            font-size:$SFont;
+            font-style: italic;
+            a{
+                position: relative;
+                float:right;
+                &::after{
+                    content:' ';
+                    display: block;
+                    background: url("../images/icons/arrowright.svg") no-repeat;
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: -4.1px;
+                    left:90px;
+                }
+            }
+        }
+    }
+}
+
+.daily-word{
+    margin-bottom: 60px;
+    background-color: $mainBackground;
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+        &--box{
+            width: 340px;
+            padding: 40px;
+            background: #ffff;
+            border-radius: $border-radius;
+            &-content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                span{
+                    font-size:$LFont;
+                }
+                &:nth-child(2){
+                    margin-top: 60px;
+                }
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+.similar-word{
+    background: $mainBackground;
+    &__wrapper{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__right{
+        &--box{
+            cursor: move;
+            .draggable.dragging {
+                opacity: .5;
+            }
+            position: relative;
+            &::after{
+                content:' ';
+                display: block;
+                background: url("../images/icons/arrowupanddown.svg") no-repeat;
+                width: 43px;
+                height: 24px;
+                cursor: move;
+                position: absolute;
+                top: 50%;
+                left: -50px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &--box{
+        width: 417px;
+        padding: 20px 13px;
+        text-align: center;
+        background: #ffff;
+        box-shadow: 0px 4px 4px 0px #CFCBCB40;
+        border-radius: $border-radius;
+    }
+    &--box:nth-child(2){
+        margin: 30px 0;
+    }
+}
