@@ -1,0 +1,108 @@
+.title{
+    color:black;
+    font-weight: bold;
+    font-size: $LFont;
+}
+.text{
+    color:black;
+    font-size: 20px;
+}
+.button{
+    button{
+        display: block;
+        background: $footerBackground;
+        padding: 12px 30px;
+        border-radius: 12px;
+        border: none;
+        font-size: 14px;
+        a{
+            color: #fff;
+        }
+    }
+}
+.search-secondary {
+    background: $footerBackground;
+    padding: 8px 0;
+    &__input{
+        width: 550px;
+        position: relative;
+        margin: 0 auto;
+        img{
+            position: absolute;
+            top:50%;
+            left:30px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        input{
+            width: 100%;
+            padding: 13px 50px 13px 83px;
+            border: none;
+            border-radius: 12px;
+            background-color: $mainBackground;
+            font-size: 14px;
+            background: #fff;
+        }
+    }
+}
+.about-us{
+    background-color: #F5F5F5;
+    &__inner{
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    &__left{
+        margin-top: 50px;
+        width: 734px;
+        line-height: 30px;
+        &__text{
+            margin: 35px 0;
+        }
+        &__button{
+            margin-top: 20px;
+        }
+    }
+    &__right{
+        &__img{
+            margin-top: 50px;
+            .img{
+                width: 339px;
+                height: 200px;
+                background: $shadow;
+            }
+        }
+    }
+}
+.targets{
+    @include AboutSectionInner;
+    &__right{
+        width: 734px;
+        line-height: 30px;
+        &__title{
+            padding: 0;
+        }
+        &__text{
+            margin: 35px 0;
+        }
+        &__button{
+            margin-top: 20px;
+        }
+    }
+}
+.add-word{
+    @include AboutSectionInner;
+    &__right{
+        width: 734px;
+        line-height: 30px;
+        &__title{
+            padding: 0;
+        }
+        &__text{
+            margin: 100px 0;
+        }
+    }
+}
+
+
+
