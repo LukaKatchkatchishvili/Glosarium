@@ -8,3 +8,29 @@
         align-items: center;
     }
 }
+@mixin PurpleButton {
+    display: block;
+        background: $footerBackground;
+        padding: 12px 30px;
+        border-radius: 12px;
+        border: none;
+        font-size: 14px;
+        a{
+            color: #fff;
+        }
+}
+@mixin add-wordInputIcon{
+    div{
+        position: relative;
+        img{
+            position: absolute;
+            top:65%;
+            left:17px;
+            transform: translateY(-65%);
+            cursor: pointer;
+        }
+        input{
+            padding-left: 50px;
+        }
+    }
+}
