@@ -29,61 +29,70 @@
                 <input type="search" name="search" placeholder="ჩაწერე საძიებო სიტყვა">
             </div>
     </section>
-    <section class="about-us">
-        <div class="container about-us__inner">
-            <div class="about-us__left">
-                <div class="about-us__left__title title">
-                    <h2>ჩვენ შესახებ</h2>
-                </div>
-                <div class="about-us__left__text text">
-                    სინონიმია ფართოდაა გავრცელებული ნებისმიერი ენის ლექსიკურ სისტემაში და მოცემული ენის ლექსიკურ სიმდიდრესა და მრავალფეროვნებაზე მეტყველებს. სინონიმიას განმარტავენ როგორც მსგავსი ლექსიკური მნიშვნელობის სიტყვებს. 
-                </div>
-                <div class="about-us__left__button button">
-                    <button><a href="#">დაგვიკავშირდით</a></button>
-                </div>
+    <section class="not-found">
+        <div class="container not-found__inner">
+            <div class="not-found__img">
+                <img src="../images/not-found.png" alt="not-found">
             </div>
-            <div class="about-us__right">
-                <div class="about-us__right__img">
-                    <div class="img"></div>
-                </div>
+            <div class="not-found__title title">
+                <h1>თუ იცი უცხო სიტყვა, რომელიც ჩვენს გლოსარიუმში ვერ იპოვე, 
+                    გამოგვიგზავნე და ერთად გავამდიდროთ გლოსარიუმი</h1>
+            </div>
+            <div class="not-found__pen">
+                <img src="../images/icons/pen.svg" alt="pen">
             </div>
         </div>
     </section>
-    <section class="targets">
-        <div class="container targets__inner">
-            <div class="targets__left">
-                <div class="targets__left__img">
-                    <img src="../images/target.svg" alt="target">
+    <section class="add-word-form">
+        <div class="container add-word-form__inner">
+            <form action="">
+                <div class="add-word-form__wrapper">
+                    <div class="add-word-form__left">
+                        <div class="add-word-form__left__name">
+                            <label for="name">სახელი, გვარი</label>
+                            <div>
+                                <img src="../images/icons/user.svg" alt="user">
+                            <input type="text" name="name" id="name"> 
+                            </div>
+                            
+                        </div>
+                        <div class="add-word-form__left__mail">
+                            <label for="mail">ელ-ფოსტის მისამართი</label>
+                            <div>
+                                <img src="../images/icons/mail.svg" alt="mail">
+                                <input type="email" name="mail" id="mail">
+                            </div>
+                            
+                        </div>
+                        <div class="add-word-form__left__phone">
+                            <label for="tel">მობილურის  ნომერი</label>
+                            <div>
+                                <img src="../images/icons/smartphone.svg" alt="smartphone">
+                            <input type="tel" name="tel" id="tel"> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="add-word-form__right">
+                        <div class="add-word-form__right__foreign-word">
+                            <label for="foreign-word">უცხო სიტყვა</label>
+                            <div>
+                            <textarea name="foreign-word" id="foreign-word" cols="10" rows="10"></textarea> 
+                            </div>
+                            
+                        </div>
+                        <div class="add-word-form__right__georgian-word">
+                            <label for="georgian-word">ელ-ფოსტის მისამართი</label>
+                            <div>
+                                <textarea name="georgian-word" id="georgian-word" cols="10" rows="10"></textarea> 
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="submit button">
+                    <button><a href="#">გაგზავნა</a></button>
                 </div>
-            </div>
-            <div class="targets__right"> 
-                <div class="targets__right__title title">
-                    <h2>რა არის ჩვენი მიზანი</h2>
-                </div>
-                <div class="targets__right__text text">
-                    სინონიმია ფართოდაა გავრცელებული ნებისმიერი ენის ლექსიკურ სისტემაში და მოცემული ენის ლექსიკურ სიმდიდრესა და მრავალფეროვნებაზე მეტყველებს. სინონიმიას განმარტავენ როგორც მსგავსი ლექსიკური მნიშვნელობის სიტყვებს. ეს განმარტება ძალიან ზოგადია, თუმცა არსებობს სინონიმიის ბევრი სხვა განმარტებაც და სხვადასხვა კლასიფიკაცია, რაც ამ ლინგვისტური მოვლენის სირთულეზე მეტყველებს. ეს ბუნებრივიცაა, რადგან თავად სიტყვის ლექსიკური მნიშვნელობაა უაღრესად რთული, კომპლექსური და მრავალწახნაგოვანი.            
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="add-word">
-        <div class="container add-word__inner">
-            <div class="add-word__left">
-                <div class="add-word__left__img">
-                    <img src="../images/MacBook.png" alt="MacBook">
-                </div>
-            </div>
-            <div class="add-word__right"> 
-                <div class="add-word__right__title title">
-                    <h2>დაამატე შენი სიტყვა</h2>
-                </div>
-                <div class="add-word__right__text text">
-                    ჩვენ გვჯერა, რომ თითოეულ თქვენგანს თავისი წვლილის შეტანა შეუძლია ჩვენს გლოსარიუმში, ამიტომ ყოველთვის მზად ვართ მივიღოთ თქვენგან შემოთავაზებები.
-                </div>
-                <div class="add-word__right__button button">
-                    <button><a href="#">შეთავაზება</a></button>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
     <footer class="footer">
