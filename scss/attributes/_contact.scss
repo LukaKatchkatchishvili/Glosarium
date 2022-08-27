@@ -1,0 +1,103 @@
+.contact-section {
+
+    margin-bottom: 140px;
+
+    .contact-us {
+        text-align: center;
+        margin: 100px 0 90px;
+        font-size: $LFont;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 60%;
+    }
+
+    &__info {
+        padding: 70px 60px;
+        background-color: $footerBackground;
+        color: #fff;
+        border-radius: 12px;
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: $LFont;
+        }
+    
+        &-details {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 70px;
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                max-width: 300px;
+            }
+        }
+    }
+
+    &__form {
+        padding: 70px 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+        &-wrapper {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            column-gap: 5%;
+            row-gap: 10%;
+        }
+    
+        &-field {
+            label {
+                font-size: 14px;
+            }
+
+            div {
+                margin-top: 10px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: .5rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            input {
+                padding-left: 2.2rem;
+                width: 100%;
+                height: 50px;
+                border-radius: 12px;
+                outline: none;
+                border: 1px solid $labelColor;
+                font-size: $LFont;
+            }
+
+        }
+
+        &-textarea {
+            width: 80%;
+            margin-top: 40px;
+
+            label {
+                font-size: 14px;
+            }
+            
+            textarea {
+                width: 100%;
+                margin-top: 10px;
+                resize: none;
+                outline: none;
+                border: 1px solid $labelColor;
+                border-radius: 12px;
+                padding: 1rem;
+            }
+        }
+    }    
+}
