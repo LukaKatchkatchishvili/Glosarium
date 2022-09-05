@@ -13,12 +13,20 @@ a{
     font-weight: bold;
     h3{
         text-align: center;
+        @media (max-width:960px) {
+            font-size: 16px;
+        }
     }
+    
 }
 .full-dictionary{
     padding: 47px 0;
     font-size: $MFont;
     font-style: italic;
+    @media (max-width:960px) {
+        font-style: normal;
+        font-size: 16px;
+    }
     a{
         position: relative;
         display: block;
@@ -34,24 +42,49 @@ a{
             position: absolute;
             top: -2px;
             right: -7px;
+            @media (max-width:960px) {
+                top: -3px;
+                right: 15px;
+            }
         }
     }
 }
 .header{
     padding: 45px 0;
     color:$black;
+    @media (max-width:960px) {
+        padding: 16px 20px;
+    }
     &__inner{
         display: flex;
         justify-content: space-between;
     }
     &__logo{
+        @media (max-width:960px) {
+            font-size:16px;
+        }
+        &-text{
+            display: none;
+            @media (max-width:960px) {
+                display: block;
+            }
+        }
         font-size:26px;
+    }
+    &__burger{
+        display: none;
+        @media (max-width:960px) {
+            display: block;
+        }
     }
     &__nav{
         display: flex;
         a{
             margin: 0 25.5px;
             font-size:18px;
+        }
+        @media (max-width:960px) {
+            display: none;
         }
     }
 }
@@ -61,34 +94,61 @@ a{
     padding: 57px 0 23px 0;
     background: $footerBackground;
     color:#ffff;
+    @media (max-width:960px) {
+        margin-top: 10px;
+        padding: 12px 20px;
+    }
     &__first-row{
         display: flex;
         justify-content: space-between;
     }
     &__first{
+        @media (max-width:960px) {
+            margin-right: 35px;
+        }
         &__title{
             font-size:$XLFont;
+            @media (max-width:960px) {
+                margin-top: 12px;
+                font-size: 14px;
+            }
         }
         &__socials{
             margin: 80px 0;
+            @media (max-width:960px) {
+                display: flex;
+                margin: 50px 0;
+            }
             img{
                 margin-right: 20px;
+                @media (max-width:960px) {
+                    display: flex;
+                    margin-right: 10px;
+                }
             }
         }
         &__rights{
             font-size:14px;
+            @media (max-width:960px) {
+                font-size: 8px;
+            }
         }
     }
     &__second{
        &__uls{
            display: flex;
            justify-content: space-between;
-           ul{
-               
+           @media (max-width:960px) {
+                font-size: 10px;
+            }
+           ul{    
                li{
                    margin: 12px 0;
                    font-size:$SFont;
-               }
+                   @media (max-width:960px) {
+                        font-size: 10px;
+                    }
+                }
                a{
                    color:#ffff;
                }
@@ -97,6 +157,9 @@ a{
     }
     &__input{
         width: 254px;
+        @media (max-width:960px) {
+            width: 120px;
+        }
         input{
             display: block;
             width: 100%;
@@ -104,14 +167,25 @@ a{
             border-radius: 6px;
             border:none;
             margin-bottom: 20px;
+            @media (max-width:960px) {
+                font-size: 7px;
+                margin-bottom: 10px;
+            }
         }
         a{
             font-size:12px;
             color:#ffff;
+            @media (max-width:960px) {
+                font-size: 7px;
+            }
         }
     }
     &__by{
         margin-top: 90px;
         font-style: italic;
+        @media (max-width:960px) {
+            font-size: 10px;
+            margin-top: 40px;
+        }
     }
 }
