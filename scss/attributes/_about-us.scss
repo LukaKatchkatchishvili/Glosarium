@@ -40,8 +40,7 @@
         position: relative;
         margin: 0 auto;
         @media (max-width:960px) {
-            width: 100%;
-            padding: 0 20px;
+            width: 80%;
         }
         img{
             position: absolute;
@@ -58,6 +57,9 @@
             background-color: $mainBackground;
             font-size: 14px;
             background: #fff;
+            @media (max-width:960px) {
+                padding-left: 75px;
+            }
         }
     }
 }
@@ -82,17 +84,26 @@
             margin-right: 30px;
             margin-top: 0;
         }
+        &__title{
+            @media (max-width:960px) {
+                padding-top: 0;
+                margin-bottom: 10px; 
+            }
+            
+        }
         &__text{
             margin: 35px 0;
             @media (max-width:960px) {
                 width: 100%;
+                margin: 10px 0;
             }
         }
         &__button{
             margin-top: 20px;
             button{
                 @media (max-width:960px) {
-                    font-size: 12px;
+                    font-size: 10px;
+                    padding: 10px 20px;
                 }
             }
             
@@ -145,9 +156,15 @@
         }
         &__title{
             padding: 0;
+            @media (max-width:960px) {
+                margin-bottom: 10px;
+            }
         }
         &__text{
             margin: 35px 0;
+            @media (max-width:960px) {
+                margin: 15px 0;
+            }
         }
         &__button{
             margin-top: 20px;
@@ -167,7 +184,7 @@
     &__left{
         img{
             @media (max-width:960px) {
-                width: 250px;
+                width: 150px;
             }
         }
     }
@@ -182,6 +199,9 @@
         }
         &__title{
             padding: 0;
+            @media (max-width:960px) {
+                margin-bottom: 10px;
+            }
         }
         &__text{
             margin: 100px 0;
@@ -192,8 +212,8 @@
         &__button{
             button{
                 @media (max-width:960px) {
-                    font-size: 12px;
-                    padding: 10px 25px;
+                    font-size: 10px;
+                    padding: 10px 20px;
                 }
             }
         }
