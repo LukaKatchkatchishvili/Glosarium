@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Glosarium</title>
+</head>
+<body>  
+    <header class="header">
+        <div class="container header__inner">
+            <div class="header__logo-text">
+                <a href="../index.html"><img src="../images/icons/logo.svg" alt="logo"></a>
+            </div>
+            <div class="header__logo">
+                <a href="index.html"><h1>გლოსარიუმი</h1></a>
+            </div>
+            <div class="header__burger">
+                <img src="../images/icons/burger-menu.svg" alt="burger-menu">
+            </div>
+            <ul class="header__nav">
+                <a href="../index.html"><li class="header__nav__wrapper--link active">მთავარი გვერდი</li></a>
+                <a href="./about_us.html"><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a>
+                <a href="./glosarium.html"><li class="header__nav__wrapper--link">გლოსარიუმი</li></a>
+                <a href="./add-word.html"><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a>
+                <a href="./contact.html"><li class="header__nav__wrapper--link">კონტაქტი</li></a>
+            </ul>
+        </div>
+    </header>
+    <section class="search-secondary">
+        <div class="container search-secondary__inner">
+            <div class="search-secondary__input">
+                <img src="../images/icons/search__about-me.svg" alt="search">
+                <input type="search" name="search" placeholder="ჩაწერე საძიებო სიტყვა">
+            </div>
+    </section>
+    <section class="not-found">
+        <div class="container not-found__inner">
+            <div class="not-found__title">
+                <h2>ძიების შედეგი: 0</h2><br>
+                <h5>სიტყვა ვერ მოიძებნა</h5>
+            </div>
+            <div class="not-found__new-img">
+                <img src="../images/not-found-word-img.png" alt="not-found-word">
+            </div>
+            <div class="not-found__title title">
+                <h1>თუ იცი უცხო სიტყვა, რომელიც ჩვენს გლოსარიუმში ვერ იპოვე, 
+                    გამოგვიგზავნე და ერთად გავამდიდროთ გლოსარიუმი</h1>
+            </div>
+            <div class="not-found__pen">
+                <img src="../images/icons/pen.svg" alt="pen">
+            </div>
+        </div>
+    </section>
+    <section class="add-word-form">
+        <div class="container add-word-form__inner">
+            <form action="">
+                <div class="add-word-form__wrapper">
+                    <div class="add-word-form__left">
+                        <div class="add-word-form__left__name">
+                            <label for="name">სახელი, გვარი</label>
+                            <div>
+                                <img src="../images/icons/user.svg" alt="user">
+                            <input type="text" name="name" id="name"> 
+                            </div>
+                            
+                        </div>
+                        <div class="add-word-form__left__mail">
+                            <label for="mail">ელ-ფოსტის მისამართი</label>
+                            <div>
+                                <img src="../images/icons/mail.svg" alt="mail">
+                                <input type="email" name="mail" id="mail">
+                            </div>
+                            
+                        </div>
+                        <div class="add-word-form__left__phone">
+                            <label for="tel">მობილურის  ნომერი</label>
+                            <div>
+                                <img src="../images/icons/smartphone.svg" alt="smartphone">
+                            <input type="tel" name="tel" id="tel"> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="add-word-form__right">
+                        <div class="add-word-form__right__foreign-word">
+                            <label for="foreign-word">უცხო სიტყვა</label>
+                            <div>
+                            <textarea name="foreign-word" id="foreign-word" cols="10" rows="10"></textarea> 
+                            </div>
+                            
+                        </div>
+                        <div class="add-word-form__right__georgian-word">
+                            <label for="georgian-word">ელ-ფოსტის მისამართი</label>
+                            <div>
+                                <textarea name="georgian-word" id="georgian-word" cols="10" rows="10"></textarea> 
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="submit button">
+                    <button><a href="#">გაგზავნა</a></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__inner">
+                <div class="footer__first-row">
+                    <div class="footer__first">
+                        <div class="footer__first__logo">
+                            <img src="../images/icons/logo-white.svg" alt="logo-white">
+                        </div>
+                        <div class="footer__first__socials">
+                            <a href="#"><img src="../images/icons/Instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="../images/icons/Linkedin.svg" alt="Linkedin"></a>
+                            <a href="#"><img src="../images/icons/Twitter.svg" alt="Twitter"></a>
+                        </div>
+                        <div class="footer__first__rights">
+                            <p>ყველა უფლება დაცულია</p>
+                        </div>
+                    </div>
+                    <div class="footer__second">
+                        <div class="footer__second__uls">
+                            <ul>
+                                <a href="../index.html"><li>მთავარი გვერდი</li></a>
+                                <a href="./about_us.html"><li>ჩვენ შესახებ</li></a>
+                                <a href="./glosarium.html"><li>გლოსარიუმი</li></a>
+                                <a href="#"><li>ბლოგი</li></a>
+                            </ul>
+                            <ul>
+                                <li>კონტაქტი:</li>
+                                <a href="#"><li>+995 578 444 333</li></a>
+                                <a href="#"><li>info@glosariumi.ge</li></a>
+                            </ul>
+                            <div class="footer__input">
+                                <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
+                                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+                            </div>
+                        </div>
+                        <div class="footer__by">
+                            <p>გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების ცენტრის დახმარებით ან ინიციატივით. 
+                            </p>
+                        </div>
+                    </div>   
+                </div>  
+        </div>
+    </footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

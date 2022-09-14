@@ -1,0 +1,25 @@
+.not-found{
+    &__new-img{
+        margin-top: 0;
+    }
+    &__title{
+        margin: 125px 0 55px 0;
+        font-weight: bold;
+        @media (max-width: 960px) {
+            margin: 35px 0;
+        }
+        h2{
+            font-size: 26px;
+            margin-bottom: 20px;
+            @media (max-width: 960px) {
+                font-size: 18px;
+            }
+        }
+        h5{
+            font-size: 20px;
+            @media (max-width: 960px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
