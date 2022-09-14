@@ -32,37 +32,7 @@
         }
     }
 }
-.search-secondary {
-    background: $footerBackground;
-    padding: 8px 0;
-    &__input{
-        width: 550px;
-        position: relative;
-        margin: 0 auto;
-        @media (max-width:960px) {
-            width: 80%;
-        }
-        img{
-            position: absolute;
-            top:50%;
-            left:30px;
-            transform: translateY(-50%);
-            cursor: pointer;
-        }
-        input{
-            width: 100%;
-            padding: 13px 50px 13px 83px;
-            border: none;
-            border-radius: 12px;
-            background-color: $mainBackground;
-            font-size: 14px;
-            background: #fff;
-            @media (max-width:960px) {
-                padding-left: 75px;
-            }
-        }
-    }
-}
+
 .about-us{
     background-color: #F5F5F5;
     &__inner{

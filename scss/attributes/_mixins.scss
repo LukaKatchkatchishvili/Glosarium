@@ -28,9 +28,16 @@
             left:17px;
             transform: translateY(-65%);
             cursor: pointer;
+            @media (max-width: 960px) {
+                width: 15px;
+                left:10px;
+            }
         }
         input{
             padding-left: 50px;
+            @media (max-width: 960px) {
+                padding-left: 35px;
+            }
         }
     }
 }
