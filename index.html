@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Glosarium</title>
 </head>
@@ -73,12 +74,12 @@
         </div>
     </section>
     <section class="daily-word popular-word">
-        <div class="container daily-word__inner">
+        <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
             <div class="daily-word__title title">
                 <h3>ყველაზე ხშირად მოძებნადი სიტყვები</h3>
             </div>
-            <div class="daily-word__wrapper">
-                <div class="daily-word__wrapper--box">
+            <div class="daily-word__wrapper swiper-wrapper">
+                <div class="daily-word__wrapper--box first" data-swipper="swiper-slide">
                     <div class="daily-word__wrapper--box-content">
                         <img src="images/icons/check-circle.svg" alt="check-circle">
                         <span>გამოყენებული</span>
@@ -90,7 +91,7 @@
                         <img src="images/icons/copy.svg" alt="copy">
                     </div>
                 </div>
-                <div class="daily-word__wrapper--box">
+                <div class="daily-word__wrapper--box second" data-swipper="swiper-slide">
                     <div class="daily-word__wrapper--box-content">
                         <img src="images/icons/check-circle.svg" alt="check-circle">
                         <span>გამოყენებული</span>
@@ -102,7 +103,7 @@
                         <img src="images/icons/copy.svg" alt="copy">
                     </div>
                 </div>
-                <div class="daily-word__wrapper--box">
+                <div class="daily-word__wrapper--box third" data-swipper="swiper-slide">
                     <div class="daily-word__wrapper--box-content">
                         <img src="images/icons/check-circle.svg" alt="check-circle">
                         <span>გამოყენებული</span>
@@ -114,19 +115,23 @@
                         <img src="images/icons/copy.svg" alt="copy">
                     </div>
                 </div>
+            </div>
+            <div class="daily-word__controls" id="controls">
+                <div data-swipper="swiper-button-prev"></div>
+                <div data-swipper="swiper-button-next"></div>
             </div>
             <div class="daily-word__full full-dictionary">
                 <a href="#">სრული გლოსარიუმი</a>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="daily-word last-word">
-        <div class="container daily-word__inner">
+        <div class="container daily-word__inner mySwiper" data-swipper="mySwiper">
             <div class="daily-word__title title">
                 <h3>ბოლოს დამატებული სიტყვები</h3>
             </div>
-            <div class="daily-word__wrapper">
-                <div class="daily-word__wrapper--box">
+            <div class="daily-word__wrapper swiper-wrapper">
+                <div class="daily-word__wrapper--box first" data-swipper="swiper-slide">
                     <div class="daily-word__wrapper--box-content">
                         <img src="images/icons/check-circle.svg" alt="check-circle">
                         <span>გამოყენებული</span>
@@ -138,7 +143,7 @@
                         <img src="images/icons/copy.svg" alt="copy">
                     </div>
                 </div>
-                <div class="daily-word__wrapper--box">
+                <div class="daily-word__wrapper--box second" data-swipper="swiper-slide">
                     <div class="daily-word__wrapper--box-content">
                         <img src="images/icons/check-circle.svg" alt="check-circle">
                         <span>გამოყენებული</span>
@@ -150,7 +155,7 @@
                         <img src="images/icons/copy.svg" alt="copy">
                     </div>
                 </div>
-                <div class="daily-word__wrapper--box">
+                <div class="daily-word__wrapper--box third" data-swipper="swiper-slide">
                     <div class="daily-word__wrapper--box-content">
                         <img src="images/icons/check-circle.svg" alt="check-circle">
                         <span>გამოყენებული</span>
@@ -162,6 +167,10 @@
                         <img src="images/icons/copy.svg" alt="copy">
                     </div>
                 </div>
+            </div>
+            <div class="daily-word__controls" id="controls">
+                <div data-swipper="swiper-button-prev"></div>
+                <div data-swipper="swiper-button-next"></div>
             </div>
             <div class="daily-word__full full-dictionary">
                 <a href="#">სრული გლოსარიუმი</a>
@@ -249,5 +258,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

@@ -220,26 +220,50 @@
 .daily-word{
     margin-bottom: 60px;
     background-color: $mainBackground;
+    position: relative;
+    @media (max-width: 960px) {
+        margin-bottom: 10px;
+
+    }
+    &__inner{
+        @media (max-width: 960px) {
+            padding: 0 50px;
+        }
+    }
     &__wrapper{
         display: flex;
         justify-content: space-around;
+        // @media (max-width: 460px) {
+        //     margin-left: 100px;
+        // }
         &--box{
-            width: 340px;
+            width: 340px !important;
             padding: 40px;
             background: #ffff;
             border-radius: $border-radius;
+            @media (max-width: 960px) {
+                width: 50% !important;
+                padding: 20px;
+                font-size: 14px;
+            }
             &-content{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 span{
                     font-size:$LFont;
+                    @media (max-width: 960px) {
+                        font-size: 14px;
+                    }
                 }
                 &:nth-child(2){
                     margin-top: 60px;
                 }
                 img{
                     cursor: pointer;
+                    @media (max-width: 960px) {
+                        width: 20px;
+                    }
                 }
             }
         }
@@ -301,3 +325,56 @@
         margin: 30px 0;
     }
 }
+.first{
+    @media (max-width:960px) {
+        margin-left: 55%;
+    }
+}
+.second{
+    margin: 0 40px;
+}
+// .swiper-button-prev{
+//     background-image: url(/images/icons/slider-aarrow-left.svg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }
+.swiper-button{
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-prev{
+        @include swiper-button-after;
+        &::after{
+            background-image: url(/images/icons/swiper-arrow-left.svg);
+            left: -80px;
+        }
+    }
+    &-next{
+        @include swiper-button-after;
+        &::after{
+            background-image: url(/images/icons/swiper-arrow-right.svg);
+            top: 8px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+#controls{
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
+// .swiper-button-next,
+// .swiper-button-prev {
+//     background-color: white;
+//     background-color: rgba(255, 255, 255, 0.5);
+//     right:10px;
+//     padding: 30px;
+//     color: #000 !important;
+//     fill: black !important;
+//     stroke: black !important;
+//     width: 20px;
+// }
