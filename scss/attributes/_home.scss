@@ -233,9 +233,6 @@
     &__wrapper{
         display: flex;
         justify-content: space-around;
-        // @media (max-width: 460px) {
-        //     margin-left: 100px;
-        // }
         &--box{
             width: 340px !important;
             padding: 40px;
@@ -290,22 +287,6 @@
                     left: -28px;
                 }
             }
-            // .draggable.dragging {
-            //     opacity: .5;
-            // }
-            // position: relative;
-            // &::after{
-            //     content:' ';
-            //     display: block;
-            //     background: url("../images/icons/arrowupanddown.svg") no-repeat;
-            //     width: 43px;
-            //     height: 24px;
-            //     cursor: move;
-            //     position: absolute;
-            //     top: 50%;
-            //     left: -50px;
-            //     transform: translateY(-50%);
-            // }
         }
     }
     &--box{
@@ -333,25 +314,20 @@
 .second{
     margin: 0 40px;
 }
-// .swiper-button-prev{
-//     background-image: url(/images/icons/slider-aarrow-left.svg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-// }
 .swiper-button{
     background-repeat: no-repeat;
     background-size: cover;
     &-prev{
         @include swiper-button-after;
         &::after{
-            background-image: url(/images/icons/swiper-arrow-left.svg);
+            background: url(/images/icons/swiper-arrow-left.svg) no-repeat center center / cover;
             left: -80px;
         }
     }
     &-next{
         @include swiper-button-after;
         &::after{
-            background-image: url(/images/icons/swiper-arrow-right.svg);
+            background: url(/images/icons/swiper-arrow-right.svg) no-repeat center center / cover;
             top: 8px;
             width: 30px;
             height: 30px;
@@ -367,14 +343,4 @@
 .swiper-button-next::after, .swiper-button-prev::after {
     content: "";
 }
-// .swiper-button-next,
-// .swiper-button-prev {
-//     background-color: white;
-//     background-color: rgba(255, 255, 255, 0.5);
-//     right:10px;
-//     padding: 30px;
-//     color: #000 !important;
-//     fill: black !important;
-//     stroke: black !important;
-//     width: 20px;
-// }
+
