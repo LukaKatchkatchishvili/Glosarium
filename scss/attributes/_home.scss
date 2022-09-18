@@ -32,6 +32,9 @@
                 width: 100%;
                 font-size: 15px;
             }
+            @media (max-width:476px) {
+                font-size: 12px;
+            }
         }  
     }
     &__cover{
@@ -119,6 +122,9 @@
             @media (max-width:960px) {
                 padding: 0 3px;
             }
+            @media (max-width:476px) {
+                padding: 0 1px;
+            }
         }
     }
 }
@@ -148,6 +154,10 @@
             height: 140px;
             margin-top: 40px;
         }
+        @media (max-width:476px) {
+            width: 120px;
+            height: 90px;
+        }
     }
     &__text{
         margin-left: 144px;
@@ -159,7 +169,10 @@
             width: 535px;
             font-size:$LFont;
             font-weight: bold;
+            padding-top: 0;
+            margin-bottom: 0;
             @media (max-width:960px) {
+                width: 95%;
                 font-size: 16px;
                 position: absolute;
                 top:25px;
@@ -182,6 +195,10 @@
             @media (max-width:560px) {
                 font-size:10px;
             }
+            @media (max-width:476px) {
+                font-size: 7px;
+                line-height: 3;
+            }
         }
         &__more{
             font-size:$SFont;
@@ -190,6 +207,9 @@
                 font-size: 14px;
                 font-style: normal;
                 text-decoration: underline;
+            }
+            @media (max-width:476px) {
+                font-size: 10px;
             }
             a{
                 position: relative;
@@ -211,6 +231,12 @@
                         top: -3.9px;
                         left: 90px;
                     }
+                    @media (max-width:476px) {
+                        top: -6.2px;
+                        left: 52px;
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
             }
         }
@@ -228,6 +254,11 @@
     &__inner{
         @media (max-width: 960px) {
             padding: 0 50px;
+        }
+    }
+    &__title{
+        @media (max-width: 476px) {
+            margin-bottom: 65px;
         }
     }
     &__wrapper{
@@ -251,6 +282,10 @@
                     font-size:$LFont;
                     @media (max-width: 960px) {
                         font-size: 14px;
+                    }
+                    @media (max-width: 476px) {
+                        font-size: 10px;
+                        margin: 0 5px;
                     }
                 }
                 &:nth-child(2){
@@ -301,6 +336,11 @@
             padding: 10px 7px;
             font-size: 13px;
         }
+        @media (max-width:476px) {
+            width: 150px;
+            padding: 10px 7px;
+            font-size: 10px;
+        }
     }
     &--box:nth-child(2){
         margin: 30px 0;
@@ -338,6 +378,9 @@
     position: absolute;
     top: 80px;
     right: 0;
+    @media (max-width: 476px) {
+        top: 90px;
+    }
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
