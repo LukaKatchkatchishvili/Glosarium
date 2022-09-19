@@ -3,6 +3,9 @@ body {
     position:relative;
     overflow-x: hidden;
 } 
+.burger-active{
+    display: block;
+}
 .container {
     width: 100%;
     max-width: 1348px;
@@ -16,6 +19,7 @@ a{
     margin-bottom: 50px;
     font-size: $XLFont;
     font-weight: bold;
+    line-height: 1.4;
     h3{
         text-align: center;
         @media (max-width:960px) {
@@ -86,8 +90,6 @@ a{
         display: none;
         @media (max-width:960px) {
             display: block;
-        }
-        @media (max-width:960px) {
             font-size:16px;
             margin: 0 auto;
         }
@@ -107,6 +109,7 @@ a{
     }
     &__burger{
         display: none;
+        cursor: pointer;
         @media (max-width:960px) {
             display: block;
             margin-left: 50px;
@@ -122,6 +125,46 @@ a{
         @media (max-width:960px) {
             display: none;
         }
+    }
+    &__nav.burger-active{
+        @media (max-width: 960px) {
+            z-index: 10;
+            display: block;
+            width: 35%;
+            position: absolute;
+            top: 58.5px;
+            right: 0;
+            padding-left: 15px;
+            background: #fff;
+            border-bottom-left-radius: 8px;
+            box-shadow: 4px 2px 6px 2px rgba(222, 222, 222, 0.25);
+        li{
+            font-size: 11.5px;
+            position: relative;
+            margin-right: 15px;
+            margin-top: 5px;
+            &::after{
+                content:' ';
+                display: block;
+                position: absolute;
+                bottom: -100%;
+                left: 0;
+                background-color: #EEEEEE;
+                width: 110%;
+                height: 1px;
+            }
+        } 
+        li.last{
+            &::after{
+                content:' ';
+                display: none;
+            }
+        } 
+        li.active{
+            margin-top: 0;
+        }
+        }
+        
     }
 }
 .search-secondary {
@@ -228,6 +271,7 @@ a{
     }
     &__input{
         width: 254px;
+        position: relative;
         @media (max-width:960px) {
             width: 120px;
             margin-left: 10px;
@@ -239,10 +283,12 @@ a{
             border-radius: 6px;
             border:none;
             margin-bottom: 20px;
+            padding-right: 36px;
             @media (max-width:960px) {
                 font-size: 7px;
                 margin-bottom: 10px;
                 width: 100%;
+                padding-right: 30px;
             }
         }
         a{
@@ -251,6 +297,21 @@ a{
             @media (max-width:960px) {
                 font-size: 7px;
             }
+        }
+        img{
+            width: 23px;
+            position: absolute;
+            top: 14.5px;
+            right: 8px;
+            cursor: pointer;
+            @media (max-width: 960px) {
+                width: 17px;
+                position: absolute;
+                top: 12.5px;
+                right: 8px;
+                background: #fff;
+            }
+            
         }
     }
     &__by{

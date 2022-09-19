@@ -24,8 +24,8 @@
         @media (max-width: 960px) {
             width: 80%;
             font-size: 0.8em;
-            padding-top: 25px;
-            margin-bottom: 25px;
+            margin: 0 !important;
+            padding: 0;
         } 
     }
     &__pen{
@@ -115,7 +115,7 @@
         margin: 150px 0;
         filter: drop-shadow(2px 2px 6px rgba(132, 132, 132, 0.37));
         @media (max-width: 960px) {
-            margin: 100px 0;
+            margin: 65px 0;
         }
         button{
             cursor: pointer;
