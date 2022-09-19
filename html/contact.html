@@ -24,7 +24,7 @@
                 <a href="./about_us.html"><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a>
                 <a href="./glosarium.html"><li class="header__nav__wrapper--link">გლოსარიუმი</li></a>
                 <a href="./add-word.html"><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a>
-                <a href="./contact.html"><li class="header__nav__wrapper--link">კონტაქტი</li></a>
+                <a href="./contact.html"><li class="header__nav__wrapper--link  last">კონტაქტი</li></a>
             </ul>
         </div>
     </header>
@@ -38,7 +38,10 @@
 
     <section class="contact-section">
         <div class="container">
-            <h2 class="contact-us">დაგვიკავშირდით</h2>
+            <div class="contact-us">
+                <h2>საკონტაქტო ინფორმაცია</h2>
+                <p>მოგვწერეთ შეკითხვა ან დაგვიკავშირდით</p>
+            </div>
             <div class="contact-section__grid">
                 <div class="contact-section__info">
                     <div class="contact-section__info-contact">
@@ -88,6 +91,9 @@
                         <label for="ask-question">თქვენი შეკითხვა ან კომენტარი</label>
                         <textarea name="ask-question" id="ask-question" rows="5" ></textarea>
                     </div>
+                    <div class="contact-section__form-button button">
+                        <button type="submit">გაგზავნა</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -95,7 +101,7 @@
 
     <section class="similar-word">
         <div class="container similar-word__inner">
-            <div class="similar-word__title title">
+            <div class="title similar-word__title">
                 <h3>შეუსაბამე სინონიმები ქართულ შესატყვისებს</h3>
             </div>
             <div class="similar-word__wrapper">
@@ -173,7 +179,8 @@
                 </div>  
         </div>
     </footer>
-
-    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
+    <script src="../js/dragAndMove.js"></script>
+    <script src="../js/burgerMenu.js"></script>
 </body>
 </html>
