@@ -17,6 +17,7 @@
         font-size: 14px;
         a{
             color: #fff;
+            font-family: 'FiraGO', sans-serif;
         }
 }
 @mixin add-wordInputIcon{
@@ -35,6 +36,7 @@
         }
         input{
             padding-left: 50px;
+            font-family: 'FiraGO', sans-serif;
             @media (max-width: 960px) {
                 padding-left: 35px;
             }
