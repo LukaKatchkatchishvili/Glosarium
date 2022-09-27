@@ -98,6 +98,10 @@
         &-field {
             label {
                 font-size: 14px;
+                @media (max-width: 960px) {
+                    font-size: 11px;
+                    font-family: 'FiraGO', sans-serif;
+                }
             }
 
             div {
@@ -135,6 +139,10 @@
             }
             label {
                 font-size: 14px;
+                @media (max-width: 960px) {
+                    font-size: 11px;
+                    font-family: 'FiraGO', sans-serif;
+                }
             }
             
             textarea {

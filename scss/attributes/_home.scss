@@ -272,6 +272,7 @@
             @media (max-width: 960px) {
                 width: 50% !important;
                 padding: 20px;
+                padding-left: 16px;
                 font-size: 14px;
             }
             &-content{
@@ -294,7 +295,7 @@
                 img{
                     cursor: pointer;
                     @media (max-width: 960px) {
-                        width: 20px;
+                        width: 14px;
                     }
                 }
             }
@@ -360,14 +361,14 @@
     &-prev{
         @include swiper-button-after;
         &::after{
-            background: url("../../images/icons/swiper-arrow-left.svg") no-repeat center center / cover;
+            background: url("../images/icons/swiper-arrow-left.svg") no-repeat center center / cover;
             left: -80px;
         }
     }
     &-next{
         @include swiper-button-after;
         &::after{
-            background: url("../../images/icons/swiper-arrow-right.svg") no-repeat center center / cover;
+            background: url("../images/icons/swiper-arrow-right.svg") no-repeat center center / cover;
             top: 8px;
             width: 30px;
             height: 30px;
