@@ -1,4 +1,4 @@
-@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500');
+// @import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:400,500');
 html,
 body {
     position:relative;
@@ -13,8 +13,13 @@ body {
 }
 .container {
     width: 100%;
-    max-width: 1348px;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 100px;
+    @media (max-width: 1200px) {
+        padding: 0 20px;
+        
+    }
 }
 a{
     color:$black;
@@ -81,7 +86,7 @@ a{
     padding: 45px 0;
     color:$black;
     @media (max-width:960px) {
-        padding: 16px 20px;
+        padding: 16px 0;
     }
     &__inner{
         display: flex;
@@ -220,11 +225,13 @@ a{
     }
     &__first{
         @media (max-width:960px) {
-            margin-right: 15px;
+            margin-right: 20px;
+            width: 100%;
         }
         &__logo{
+            width: 120px;
             img{
-                width: 120px;
+                width: 100%;
                 @media (max-width:960px) {
                     width: 100%;
                     margin-top: 12px;
@@ -250,16 +257,17 @@ a{
             font-size:14px;
             @media (max-width:960px) {
                 font-size: 8px;
+                width: 50%;
             }
         }
     }
     &__second{
+        @media (max-width:960px) {
+            width: 100%;
+        }
        &__uls{
            display: flex;
            justify-content: space-between;
-           @media (max-width:960px) {
-                font-size: 10px;
-            }
            ul{    
                li{
                    margin: 12px 0;
@@ -267,6 +275,9 @@ a{
                    @media (max-width:960px) {
                         font-size: 10px;
                     }
+                }
+                @media (max-width:467px) {
+                    margin: 0 13px;
                 }
                a{
                    color:#ffff;
@@ -318,6 +329,23 @@ a{
             }
             
         }
+        &__first{
+            @media (max-width: 960px) {
+                display: none;
+            }
+        }
+        &__second{
+            display: none;
+            @media (max-width: 960px) {
+                width: 60%;
+                display: block;
+                margin-left: 0;
+                margin-top: 35px;
+            }
+            @media (max-width:476px) {
+                width: 100%;
+            }
+        }
     }
     &__by{
         margin-top: 90px;
@@ -326,6 +354,19 @@ a{
             font-size: 10px;
             margin-top: 40px;
             width: 100%;
+        }
+        &__normal{
+            @media (max-width:960px) {
+                display: none;
+            }
+        }
+        &__responsive{
+            display: none;
+            @media (max-width:960px) {
+                display: block;
+                width: 100%;
+                font-size: 10px;
+            }
         }
     }
 }

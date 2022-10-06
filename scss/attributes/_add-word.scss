@@ -21,10 +21,10 @@
     &__title{
         width: 60%;
         text-align: center;
+        margin: 0 !important;
         @media (max-width: 960px) {
             width: 80%;
             font-size: 0.8em;
-            margin: 0 !important;
             padding: 0;
         } 
     }

@@ -3,7 +3,7 @@
         margin-top: 0;
     }
     &__title{
-        margin: 125px 0 55px 0;
+        margin: 125px 0 55px 0 !important;
         font-weight: bold;
         @media (max-width: 960px) {
             margin: 35px 0;
