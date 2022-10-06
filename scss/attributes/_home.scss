@@ -266,7 +266,7 @@
         justify-content: space-around;
         &--box{
             width: 340px !important;
-            padding: 40px;
+            padding: 40px 20px;
             background: #ffff;
             border-radius: $border-radius;
             @media (max-width: 960px) {
@@ -297,6 +297,15 @@
                     @media (max-width: 960px) {
                         width: 14px;
                     }
+                }
+                .second-icon{
+                    margin-left: 40px;
+                }
+                .heart-clicked{
+                    background-image: url("../../images/icons/heart-clicked.svg");
+                }
+                .copy-clicked{
+                    background-image: url("../../images/icons/copy-clicked.svg");
                 }
             }
         }

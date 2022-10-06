@@ -85,6 +85,20 @@
         @media (max-width: 1024px) {
             padding: 70px 20px;
             padding-bottom: 0;
+
+            .name{
+                grid-area: name;
+            }
+            .email{
+                grid-area: email;
+            }
+            .tel{
+                grid-area: tel;
+                input{
+                    width: 95%;
+                    color: white;
+                }
+            }
         }
 
         &-wrapper {
@@ -93,8 +107,12 @@
             grid-template-columns: 50% 50%;
             column-gap: 5%;
             row-gap: 10%;
+            @media (max-width: 1024px) {
+                grid-template-areas:
+                    "name email"
+                    "tel  tel";
+            }
         }
-    
         &-field {
             label {
                 font-size: 14px;
@@ -115,17 +133,17 @@
                     transform: translateY(-50%);
                 }
             }
-
             input {
-                padding-left: 2.2rem;
+                padding-left: 2.5rem;
                 width: 100%;
                 height: 50px;
                 border-radius: 12px;
                 outline: none;
                 border: 1px solid $labelColor;
-                font-size: $LFont;
+                font-size: 16px;
                 @media (max-width: 1024px) {
                     width: 90%;
+                    font-size: 12px;
                 }
             }
 
