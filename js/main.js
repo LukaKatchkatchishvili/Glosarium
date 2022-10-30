@@ -78,7 +78,8 @@ const createSpan = (spanData, spanTextContent) => {
   span.textContent = spanTextContent;
   alphabetWrapper.appendChild(span);
 };
-for (i in dataLetters) {
+
+for (let i in dataLetters) {
   createSpan(dataLetters[i], textContentLetters[i]);
 }
 
@@ -88,9 +89,19 @@ hearts.forEach((item) => {
     item.classList.toggle("heart-clicked");
   });
 });
+
+const copyOnClipboard = (txt) => {
+  navigator.clipboard.writeText(txt);
+};
+
 const copy = document.querySelectorAll(".copy");
+
 copy.forEach((item) => {
   item.addEventListener("click", () => {
+    let copy_text = item.previousElementSibling.innerHTML;
+
+    copyOnClipboard(copy_text);
+
     item.classList.toggle("copy-clicked");
   });
 });
