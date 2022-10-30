@@ -14,9 +14,17 @@ for (i in dataLetters){
     createSpan(dataLetters[i],textContentLetters[i]);
 }
 
-// drag and move
-const dragableWrapper = document.querySelector(".similar-word__right");
-new Sortable(dragableWrapper, {
-    handle: '.similar-word__right', // handle's class
-    animation: 150
-});
+
+let hearts = document.querySelectorAll(".heart");
+hearts.forEach((item)=>{
+    item.addEventListener("click",()=>{
+        item.classList.toggle("heart-clicked");
+})
+})
+let copy = document.querySelectorAll(".copy");
+copy.forEach((item)=>{
+    item.addEventListener("click",()=>{
+        item.classList.toggle("copy-clicked");
+})
+})
+

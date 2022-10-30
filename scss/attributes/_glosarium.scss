@@ -1,0 +1,113 @@
+.glosarium-alphabet {
+    background: rgba(222, 219, 238, 0.2);
+    padding: 90px 0 110px;
+    text-align: center;
+    @media (max-width: 960px) {
+        padding: 60px 0
+    }
+    &__heading {
+        font-size: $XLFont;
+    }
+
+    .search__alphabet {
+        margin-top: 90px;
+        @media (max-width: 960px) {
+            margin-top: 50px;
+
+        }
+    }
+}
+
+.glosarium-words {
+    background: rgba(222, 219, 238, 0.2);
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex{
+        @media (max-width: 476px) {
+            gap: 9px !important;
+        }
+    }
+    &__list {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 45%;
+        padding: 0 20px;
+        
+        li{
+            background: #fff;
+            box-shadow: 0px 4px 4px rgba(207, 203, 203, 0.25);
+            border-radius: 24px;
+        }
+    }
+
+    &__heading-wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: $XLFont;
+        padding: 0 15%;
+
+        @media (max-width: 960px) {
+            font-size: 13px;
+        }
+    }
+
+    .first-list-item {
+        position: relative;
+    }
+
+    .first-list-item::before {
+        content: 'ა';
+        position: absolute;
+        top: -60px;
+        left: 110%;
+        font-size: 40px;
+    }
+
+    &__list-item {
+        padding: 21px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: $LFont;
+        width: 100%;
+        @media (max-width: 960px) {
+            p {
+                font-size: 11px;
+            }
+            img {
+                max-width: 12px;
+            } 
+        }
+        @media (max-width: 476px) {
+            padding: 10px 0;
+        }
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    
+}
+
+// just visual test of pagination not finished neither style-wise nor functionality
+.pagination {
+    margin-top: 140px;
+    text-align: center;
+    padding-bottom: 100px;
+    @media (max-width: 960px) {
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+}
