@@ -96,12 +96,20 @@ const copyOnClipboard = (txt) => {
 
 const copy = document.querySelectorAll(".copy");
 
+const removeCopyActiveClass = () => {
+  copy.forEach((el) => {
+    el.classList.remove("copy-clicked");
+  });
+};
+
 copy.forEach((item) => {
   item.addEventListener("click", () => {
     let copy_text = item.previousElementSibling.innerHTML;
 
     copyOnClipboard(copy_text);
 
-    item.classList.toggle("copy-clicked");
+    // removes class copy class
+    removeCopyActiveClass();
+    item.classList.add("copy-clicked");
   });
 });
