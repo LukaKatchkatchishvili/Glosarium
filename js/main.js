@@ -84,9 +84,16 @@ for (let i in dataLetters) {
 }
 
 const hearts = document.querySelectorAll(".heart");
+
+const removeHeartActiveClass = () => {
+  hearts.forEach((el) => el.classList.remove("heart-clicked"));
+};
+
 hearts.forEach((item) => {
   item.addEventListener("click", () => {
-    item.classList.toggle("heart-clicked");
+    removeHeartActiveClass();
+
+    item.classList.add("heart-clicked");
   });
 });
 
