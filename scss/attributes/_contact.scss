@@ -1,192 +1,191 @@
 .contact-section {
-    margin: 120px 0;
+  margin: 120px 0;
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+    margin: 10px 0;
+  }
+  .contact-us {
+    display: none;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    p {
+      margin-top: 5px;
+      font-size: 12px;
+    }
     @media (max-width: 1024px) {
-        padding: 0 20px;
-        margin: 10px 0;
+      display: block;
     }
-    .contact-us {
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    padding: 0 0.5rem;
+    background-color: #dedbee33;
+    border-radius: 12px;
+    padding-left: 0;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  }
+  &__info {
+    padding: 70px 60px;
+    background-color: $footerBackground;
+    color: #fff;
+    border-radius: 12px;
+    @media (max-width: 1024px) {
+      padding: 30px 1rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+      font-size: $LFont;
+    }
+
+    &-contact {
+      margin-bottom: 110px;
+      @media (max-width: 1024px) {
         display: none;
-        text-align: center;
-        margin: 15px 0;
-        font-size: 14px;
-        p{
-            margin-top: 5px;
-            font-size: 12px;
-        }
-        @media (max-width: 1024px) {
-            display: block;
-        }
+      }
     }
-    &__grid {
-        display: grid;
-        grid-template-columns: 1fr 60%;
-        padding: 0 .5rem;
-        background-color: #DEDBEE33;
-        border-radius: 12px;
-        padding-left: 0;
-        @media (max-width: 1024px) {
-            grid-template-columns: 1fr;
-            padding: 0;
-        }
-    }
-    &__info {
-        padding: 70px 60px;
-        background-color: $footerBackground;
-        color: #fff;
-        border-radius: 12px;
-        @media (max-width: 1024px) {
-            padding: 30px 1rem;
-        }
-        h2 {
-            margin-bottom: 1rem;
-            font-size: $LFont;
-        }
+    &-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+      width: 100%;
 
-        &-contact {
-            margin-bottom: 110px;
-            @media (max-width: 1024px) {
-                display: none;
-            }
-        }
-        &-details {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 50px;
-            width: 100%;
-
-            @media (max-width: 1024px) {
-                margin-top: 0;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-                gap: 10px;
-                font-size: 12px;
-            }
-            &-item {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                max-width: 300px;
-
-                @media (max-width: 1024px) {
-                    flex-direction: column;
-                    text-align: center;
-                    max-width: 118px;
-                }
-            }
-        }
-    }
-
-    &__form {
-        padding: 70px 60px;
+      @media (max-width: 1024px) {
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 12px;
+      }
+      &-item {
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        max-width: 300px;
+
         @media (max-width: 1024px) {
-            padding: 70px 20px;
-            padding-bottom: 0;
-
-            .name{
-                grid-area: name;
-            }
-            .email{
-                grid-area: email;
-            }
-            .tel{
-                grid-area: tel;
-                input{
-                    width: 95%;
-                    color: white;
-                }
-            }
+          flex-direction: column;
+          text-align: center;
+          max-width: 118px;
         }
+      }
+    }
+  }
 
-        &-wrapper {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            column-gap: 5%;
-            row-gap: 10%;
-            @media (max-width: 1024px) {
-                grid-template-areas:
-                    "name email"
-                    "tel  tel";
-            }
+  &__form {
+    padding: 70px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 1024px) {
+      padding: 70px 20px;
+      padding-bottom: 0;
+
+      .name {
+        grid-area: name;
+      }
+      .email {
+        grid-area: email;
+      }
+      .tel {
+        grid-area: tel;
+        input {
+          width: 95%;
+          color: white;
         }
-        &-field {
-            label {
-                font-size: 14px;
-                @media (max-width: 960px) {
-                    font-size: 11px;
-                    font-family: 'FiraGO', sans-serif;
-                }
-            }
+      }
+    }
 
-            div {
-                margin-top: 10px;
-                position: relative;
-
-                img {
-                    position: absolute;
-                    left: .5rem;
-                    top: 50%;
-                    transform: translateY(-50%);
-                }
-            }
-            input {
-                padding-left: 2.5rem;
-                width: 100%;
-                height: 50px;
-                border-radius: 12px;
-                outline: none;
-                border: 1px solid $labelColor;
-                font-size: 16px;
-                @media (max-width: 1024px) {
-                    width: 90%;
-                    font-size: 12px;
-                }
-            }
-
+    &-wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      column-gap: 5%;
+      row-gap: 10%;
+      @media (max-width: 1024px) {
+        grid-template-areas:
+          "name email"
+          "tel  tel";
+      }
+    }
+    &-field {
+      label {
+        font-size: 14px;
+        @media (max-width: 960px) {
+          font-size: 11px;
+          font-family: "FiraGO", sans-serif;
         }
+      }
 
-        &-textarea {
-            width: 90%;
-            margin: 40px 0;
-            @media (max-width: 1024px) {
-                width: 100%;
-            }
-            label {
-                font-size: 14px;
-                @media (max-width: 960px) {
-                    font-size: 11px;
-                    font-family: 'FiraGO', sans-serif;
-                }
-            }
-            
-            textarea {
-                width: 100%;
-                margin-top: 10px;
-                resize: none;
-                outline: none;
-                border: 1px solid $labelColor;
-                border-radius: 12px;
-                padding: 1rem;
-            }
+      div {
+        margin-top: 10px;
+        position: relative;
+
+        img {
+          position: absolute;
+          left: 0.5rem;
+          top: 50%;
+          transform: translateY(-50%);
         }
-        &-button{
-            margin: 0 auto;
-            @media (max-width: 1024px) {
-                padding-bottom: 45px;
-            }
-            button{
-                cursor: pointer;
-                padding: 15px 80px;
-                color: #fff;
-                @media (max-width: 1024px) {
-                    padding: 10px 50px;
-                    font-size: 12px;
-                }
-            }
+      }
+      input {
+        padding-left: 2.5rem;
+        width: 100%;
+        height: 50px;
+        border-radius: 12px;
+        outline: none;
+        border: 1px solid $labelColor;
+        font-size: 16px;
+        @media (max-width: 1024px) {
+          width: 90%;
+          font-size: 12px;
         }
-    }    
+      }
+    }
+
+    &-textarea {
+      width: 90%;
+      margin: 40px 0;
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+      label {
+        font-size: 14px;
+        @media (max-width: 960px) {
+          font-size: 11px;
+          font-family: "FiraGO", sans-serif;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        margin-top: 10px;
+        resize: none;
+        outline: none;
+        border: 1px solid $labelColor;
+        border-radius: 12px;
+        padding: 1rem;
+      }
+    }
+    &-button {
+      margin: 0 auto;
+      @media (max-width: 1024px) {
+        padding-bottom: 45px;
+      }
+      button {
+        cursor: pointer;
+        padding: 15px 80px;
+        color: #fff;
+        @media (max-width: 1024px) {
+          padding: 10px 50px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
