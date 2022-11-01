@@ -1,367 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Glosarium</title>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="../css/style.css" />
+      <title>Glosarium</title>
     </head>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__inner">
-            <div class="header__logo-text">
-                <a href="../index.html"><img src="../images/icons/logo.svg" alt="logo"></a>
-            </div>
-            <div class="header__logo">
-                <a href="../index.html"><h1>გლოსარიუმი</h1></a>
-            </div>
-            <div class="header__burger">
-                <img src="../images/icons/burger-menu.svg" alt="burger-menu">
-            </div>
-            <ul class="header__nav">
-                <a href="../index.html"><li class="header__nav__wrapper--link active">მთავარი გვერდი</li></a>
-                <a href="./about_us.html"><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a>
-                <a href="./glosarium.html"><li class="header__nav__wrapper--link">გლოსარიუმი</li></a>
-                <a href="./add-word.html"><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a>
-                <a href="./contact.html"><li class="header__nav__wrapper--link last">კონტაქტი</li></a>
-            </ul>
+      <div class="container header__inner">
+        <div class="header__logo-text">
+          <a href="../index.html"
+            ><img src="../images/icons/logo.svg" alt="logo"
+          /></a>
         </div>
+        <div class="header__logo">
+          <a href="../index.html"><h1>გლოსარიუმი</h1></a>
+        </div>
+        <div class="header__burger">
+          <img src="../images/icons/burger-menu.svg" alt="burger-menu" />
+        </div>
+        <ul class="header__nav">
+          <a href="../index.html"
+            ><li class="header__nav__wrapper--link active">
+              მთავარი გვერდი
+            </li></a
+          >
+          <a href="./about_us.html"
+            ><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a
+          >
+          <a href="./glosarium.html"
+            ><li class="header__nav__wrapper--link">გლოსარიუმი</li></a
+          >
+          <a href="./add-word.html"
+            ><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a
+          >
+          <a href="./contact.html"
+            ><li class="header__nav__wrapper--link last">კონტაქტი</li></a
+          >
+        </ul>
+      </div>
     </header>
     <section class="search-secondary">
-        <div class="container search-secondary__inner">
-            <div class="search-secondary__input">
-                <img src="../images/icons/search__about-me.svg" alt="search">
-                <input type="search" name="search" placeholder="ჩაწერე საძიებო სიტყვა">
-            </div>
+      <div class="container search-secondary__inner">
+        <form action="/" method="get" class="search-secondary__input">
+          <img src="../images/icons/search__about-me.svg" alt="search" />
+          <input
+            type="search"
+            name="search"
+            placeholder="ჩაწერე საძიებო სიტყვა"
+          />
+        </form>
+      </div>
     </section>
 
     <div class="glosarium-alphabet">
-        <div class="container">
-            <h1 class="glosarium-alphabet__heading">გლოსარიუმი</h1>
-            <div class="search__alphabet">
-            </div>
-        </div>
+      <div class="container">
+        <h1 class="glosarium-alphabet__heading">გლოსარიუმი</h1>
+        <div class="search__alphabet"></div>
+      </div>
     </div>
     <section class="glosarium-words">
-        <div class="container">
-            <div class="glosarium-words__wrapper">
-                <!-- foreign words -->
-                <div class="glosarium-words__heading-wrapper">
-                    <h2 class="glosarium-words__heading">უცხო სიტყვა</h2>
-                    <h2 class="glosarium-words__heading">ქართული შესატყვისი</h2>
-                </div>
-                <ul class="glosarium-words__list">
-                    <li class="glosarium-words__list-item first-list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/x-cross.svg" alt="x-cross">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                </ul>
+      <div class="container">
+        <div class="glosarium-words__wrapper">
+          <!-- foreign words -->
+          <div class="glosarium-words__heading-wrapper">
+            <h2 class="glosarium-words__heading">უცხო სიტყვა</h2>
+            <h2 class="glosarium-words__heading">ქართული შესატყვისი</h2>
+          </div>
+          <ul class="glosarium-words__list">
+            <li class="glosarium-words__list-item first-list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img src="../images/icons/x-cross.svg" alt="x-cross" />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+          </ul>
 
-                <!-- georgian words -->
-                <ul class="glosarium-words__list">
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                    <li class="glosarium-words__list-item">
-                        <div class="flex">
-                            <img src="../images/icons/check-circle.svg" alt="check-circle">
-                            <p>აბდომენი</p>
-                        </div>
-                        <div class="flex">
-                            <img src="../images/icons/copy.svg" alt="copy-icon">
-                            <img src="../images/icons/heart.svg" alt="heart-icon">
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-            <div class="pagination">
-                <p><< < 1 2 3 4 5 6 7 > >></p>
-            </div>
+          <!-- georgian words -->
+          <ul class="glosarium-words__list">
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+            <li class="glosarium-words__list-item">
+              <div class="flex">
+                <img
+                  src="../images/icons/check-circle.svg"
+                  alt="check-circle"
+                />
+                <p>აბდომენი</p>
+              </div>
+              <div class="flex">
+                <img src="../images/icons/copy.svg" alt="copy-icon" />
+                <img src="../images/icons/heart.svg" alt="heart-icon" />
+              </div>
+            </li>
+          </ul>
         </div>
+        <div class="pagination">
+          <p><< < 1 2 3 4 5 6 7 > >></p>
+        </div>
+      </div>
     </section>
 
-
-
     <footer class="footer">
-        <div class="container footer__inner">
-                <div class="footer__first-row">
-                    <div class="footer__first">
-                        <div class="footer__first__logo">
-                            <img src="../images/icons/logo-white.svg" alt="logo-white">
-                        </div>
-                        <div class="footer__first__socials">
-                            <a href="#"><img src="../images/icons/Instagram.svg" alt="Instagram"></a>
-                            <a href="#"><img src="../images/icons/Linkedin.svg" alt="Linkedin"></a>
-                            <a href="#"><img src="../images/icons/Twitter.svg" alt="Twitter"></a>
-                        </div>
-                        <div class="footer__by__responsive">
-                            <p>გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების ცენტრის დახმარებით ან ინიციატივით. 
-                            </p>
-                        </div>
-                        <div class="footer__first__rights">
-                            <p>ყველა უფლება დაცულია</p>
-                        </div>
-                    </div>
-                    <div class="footer__second">
-                        <div class="footer__second__uls">
-                            <ul>
-                                <a href="../index.html"><li>მთავარი გვერდი</li></a>
-                                <a href="./about_us.html"><li>ჩვენ შესახებ</li></a>
-                                <a href="./glosarium.html"><li>გლოსარიუმი</li></a>
-                                <a href="#"><li>ბლოგი</li></a>
-                            </ul>
-                            <ul>
-                                <li>კონტაქტი:</li>
-                                <a href="#"><li>+995 578 444 333</li></a>
-                                <a href="#"><li>info@glosariumi.ge</li></a>
-                            </ul>
-                            <div class="footer__input footer__input__first">
-                                <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
-                                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
-                                <img src="../images/icons/email-send.svg">
-                            </div>
-                        </div>
-                        <div class="footer__input footer__input__second">
-                            <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
-                            <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
-                            <img src="../images/icons/email-send.svg">
-                        </div>
-                        <div class="footer__by footer__by__normal">
-                            <p>გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების ცენტრის დახმარებით ან ინიციატივით. 
-                            </p>
-                        </div>
-                    </div>   
-                </div>  
+      <div class="container footer__inner">
+        <div class="footer__first-row">
+          <div class="footer__first">
+            <div class="footer__first__logo">
+              <img src="../images/icons/logo-white.svg" alt="logo-white" />
+            </div>
+            <div class="footer__first__socials">
+              <a href="#"
+                ><img src="../images/icons/Instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="../images/icons/Linkedin.svg" alt="Linkedin"
+              /></a>
+              <a href="#"
+                ><img src="../images/icons/Twitter.svg" alt="Twitter"
+              /></a>
+            </div>
+            <div class="footer__by__responsive">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+            <div class="footer__first__rights">
+              <p>ყველა უფლება დაცულია</p>
+            </div>
+          </div>
+          <div class="footer__second">
+            <div class="footer__second__uls">
+              <ul>
+                <a href="../index.html"><li>მთავარი გვერდი</li></a>
+                <a href="./about_us.html"><li>ჩვენ შესახებ</li></a>
+                <a href="./glosarium.html"><li>გლოსარიუმი</li></a>
+                <a href="#"><li>ბლოგი</li></a>
+              </ul>
+              <ul>
+                <li>კონტაქტი:</li>
+                <a href="#"><li>+995 578 444 333</li></a>
+                <a href="#"><li>info@glosariumi.ge</li></a>
+              </ul>
+              <div class="footer__input footer__input__first">
+                <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" />
+                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+                <img src="../images/icons/email-send.svg" />
+              </div>
+            </div>
+            <div class="footer__input footer__input__second">
+              <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" />
+              <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+              <img src="../images/icons/email-send.svg" />
+            </div>
+            <div class="footer__by footer__by__normal">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="../js/main.js"></script>
     <script src="../js/burgerMenu.js"></script>
-</body>
+  </body>
 </html>
