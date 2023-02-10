@@ -1,196 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Glosarium</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <div class="container header__inner">
-            <div class="header__logo-text">
-                <a href="../index.html"><img src="../images/icons/logo.svg" alt="logo"></a>
-            </div>
-            <div class="header__logo">
-                <a href="../index.html"><h1>გლოსარიუმი</h1></a>
-            </div>
-            <div class="header__burger">
-                <img src="../images/icons/burger-menu.svg" alt="burger-menu">
-            </div>
-            <ul class="header__nav">
-                <a href="../index.html"><li class="header__nav__wrapper--link active">მთავარი გვერდი</li></a>
-                <a href="./about_us.html"><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a>
-                <a href="./glosarium.html"><li class="header__nav__wrapper--link">გლოსარიუმი</li></a>
-                <a href="./add-word.html"><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a>
-                <a href="./contact.html"><li class="header__nav__wrapper--link  last">კონტაქტი</li></a>
-            </ul>
+      <div class="container header__inner">
+        <div class="header__logo-text">
+          <a href="../index.html"
+            ><img src="../images/icons/logo.svg" alt="logo"
+          /></a>
         </div>
+        <div class="header__logo">
+          <a href="../index.html"><h1>გლოსარიუმი</h1></a>
+        </div>
+        <div class="header__burger">
+          <img src="../images/icons/burger-menu.svg" alt="burger-menu" />
+        </div>
+        <ul class="header__nav">
+          <a href="../index.html"
+            ><li class="header__nav__wrapper--link active">
+              მთავარი გვერდი
+            </li></a
+          >
+          <a href="./about_us.html"
+            ><li class="header__nav__wrapper--link">ჩვენს შესახებ</li></a
+          >
+          <a href="./glosarium.html"
+            ><li class="header__nav__wrapper--link">გლოსარიუმი</li></a
+          >
+          <a href="./add-word.html"
+            ><li class="header__nav__wrapper--link">შეთავაზების ველი</li></a
+          >
+          <a href="./contact.html"
+            ><li class="header__nav__wrapper--link last">კონტაქტი</li></a
+          >
+        </ul>
+      </div>
     </header>
     <section class="search-secondary">
-        <div class="container search-secondary__inner">
-            <div class="search-secondary__input">
-                <img src="../images/icons/search__about-me.svg" alt="search">
-                <input type="search" name="search" placeholder="ჩაწერე საძიებო სიტყვა">
-            </div>
+      <div class="container search-secondary__inner">
+        <div class="search-secondary__input">
+          <img src="../images/icons/search__about-me.svg" alt="search" />
+          <input
+            type="search"
+            name="search"
+            placeholder="ჩაწერე საძიებო სიტყვა"
+          />
+        </div>
+      </div>
     </section>
 
     <section class="contact-section">
-        <div class="container">
-            <div class="contact-us">
-                <h2>საკონტაქტო ინფორმაცია</h2>
-                <p>მოგვწერეთ შეკითხვა ან დაგვიკავშირდით</p>
-            </div>
-            <div class="contact-section__grid">
-                <div class="contact-section__info">
-                    <div class="contact-section__info-contact">
-                        <h2>საკონტაქტო ინფორმაცია</h2>
-                        <p>მოგვწერეთ შეკითხვა ან დაგვიკავშირდით</p>
-                    </div>
-                    <div class="contact-section__info-details">
-                        <div class="contact-section__info-details-item">
-                            <img src="../images/icons/telephone.svg" alt="phone">
-                            <span>+995 765 546 765</span>
-                        </div>
-                        <div class="contact-section__info-details-item">
-                            <img src="../images/icons/email.svg" alt="email">
-                            <span>info@glosariumi.ge</span>
-                        </div>
-                        <div class="contact-section__info-details-item">
-                            <img src="../images/icons/pin.svg" alt="location">
-                            <span>ქაქუცა ჩოლოყაშვილის გამზირი 3/5, თბილისი 0162, საქართველო</span>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-section__form">
-                    <div class="contact-section__form-wrapper">
-                        <div class="contact-section__form-field name">
-                            <label for="username">სახელი, გვარი</label>
-                            <div>
-                                <img src="../images/icons/user.svg" alt="username">
-                                <input type="text" minlength="4" required>
-                            </div>
-                        </div>
-                        <div class="contact-section__form-field email">
-                            <label for="username">ელ-ფოსტის მისამართი</label>
-                            <div>
-                                <img src="../images/icons/mail.svg" alt="email">
-                                <input type="email" required>
-                            </div>
-                        </div>
-                        <div class="contact-section__form-field tel">
-                            <label for="username">მობილურის ნომერი</label>
-                            <div>
-                                <img src="../images/icons/smartphone.svg" alt="mobile">
-                                <input type="tel" minlength="4" required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-section__form-textarea">
-                        <label for="ask-question">თქვენი შეკითხვა ან კომენტარი</label>
-                        <textarea name="ask-question" id="ask-question" rows="5" ></textarea>
-                    </div>
-                    <div class="contact-section__form-button button">
-                        <button type="submit">გაგზავნა</button>
-                    </div>
-                </form>
-            </div>
+      <div class="container">
+        <div class="contact-us">
+          <h2>საკონტაქტო ინფორმაცია</h2>
+          <p>მოგვწერეთ შეკითხვა ან დაგვიკავშირდით</p>
         </div>
+        <div class="contact-section__grid">
+          <div class="contact-section__info">
+            <div class="contact-section__info-contact">
+              <h2>საკონტაქტო ინფორმაცია</h2>
+              <p>მოგვწერეთ შეკითხვა ან დაგვიკავშირდით</p>
+            </div>
+            <div class="contact-section__info-details">
+              <div class="contact-section__info-details-item">
+                <img src="../images/icons/telephone.svg" alt="phone" />
+                <span>+995 765 546 765</span>
+              </div>
+              <div class="contact-section__info-details-item">
+                <img src="../images/icons/email.svg" alt="email" />
+                <span>info@glosariumi.ge</span>
+              </div>
+              <div class="contact-section__info-details-item">
+                <img src="../images/icons/pin.svg" alt="location" />
+                <span
+                  >ქაქუცა ჩოლოყაშვილის გამზირი 3/5, თბილისი 0162,
+                  საქართველო</span
+                >
+              </div>
+            </div>
+          </div>
+          <form class="contact-section__form">
+            <div class="contact-section__form-wrapper">
+              <div class="contact-section__form-field name">
+                <label for="username">სახელი, გვარი</label>
+                <div>
+                  <img src="../images/icons/user.svg" alt="username" />
+                  <input type="text" minlength="4" required />
+                </div>
+              </div>
+              <div class="contact-section__form-field email">
+                <label for="username">ელ-ფოსტის მისამართი</label>
+                <div>
+                  <img src="../images/icons/mail.svg" alt="email" />
+                  <input type="email" required />
+                </div>
+              </div>
+              <div class="contact-section__form-field tel">
+                <label for="username">მობილურის ნომერი</label>
+                <div>
+                  <img src="../images/icons/smartphone.svg" alt="mobile" />
+                  <input type="tel" minlength="4" required />
+                </div>
+              </div>
+            </div>
+            <div class="contact-section__form-textarea">
+              <label for="ask-question">თქვენი შეკითხვა ან კომენტარი</label>
+              <textarea
+                name="ask-question"
+                id="ask-question"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="contact-section__form-button button">
+              <button type="submit">გაგზავნა</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <section class="similar-word">
-        <div class="container similar-word__inner">
-            <div class="title similar-word__title">
-                <h3>შეუსაბამე სინონიმები ქართულ შესატყვისებს</h3>
-            </div>
-            <div class="similar-word__wrapper">
-                <div class="similar-word__left">
-                    <div class="similar-word__left--box similar-word--box">
-                        <p>განყენებული</p>
-                    </div>
-                    <div class="similar-word__left--box similar-word--box">
-                        <p>განყენებული</p>
-                    </div>
-                    <div class="similar-word__left--box similar-word--box">
-                        <p>განყენებული</p>
-                    </div>
-                </div>
-                <div class="similar-word__right">
-                    <div class="similar-word__right--box similar-word--box draggable" draggable="true">
-                        <img src="../images/icons/arrowupanddown.svg" id="drag">
-                        <p>აბსტრაქტული 1</p>
-                    </div>
-                    <div class="similar-word__right--box similar-word--box draggable" draggable="true">
-                        <img src="../images/icons/arrowupanddown.svg" id="drag">
-                        <p>აბსტრაქტული 2</p>
-                    </div>
-                    <div class="similar-word__right--box similar-word--box draggable" draggable="true">
-                        <img src="../images/icons/arrowupanddown.svg" id="drag">
-                        <p>აბსტრაქტული 3</p>
-                    </div>
-                </div>
-            </div>
-            <div class="daily-word__full full-dictionary">
-                <a href="#">სრული გლოსარიუმი</a>
-            </div>
+      <div class="container similar-word__inner">
+        <div class="title similar-word__title">
+          <h3>შეუსაბამე სინონიმები ქართულ შესატყვისებს</h3>
         </div>
+        <div class="similar-word__wrapper">
+          <div class="similar-word__left">
+            <div class="similar-word__left--box similar-word--box">
+              <p>განყენებული</p>
+            </div>
+            <div class="similar-word__left--box similar-word--box">
+              <p>განყენებული</p>
+            </div>
+            <div class="similar-word__left--box similar-word--box">
+              <p>განყენებული</p>
+            </div>
+          </div>
+          <div class="similar-word__right">
+            <div
+              class="similar-word__right--box similar-word--box draggable"
+              draggable="true"
+            >
+              <img src="../images/icons/arrowupanddown.svg" id="drag" />
+              <p>აბსტრაქტული 1</p>
+            </div>
+            <div
+              class="similar-word__right--box similar-word--box draggable"
+              draggable="true"
+            >
+              <img src="../images/icons/arrowupanddown.svg" id="drag" />
+              <p>აბსტრაქტული 2</p>
+            </div>
+            <div
+              class="similar-word__right--box similar-word--box draggable"
+              draggable="true"
+            >
+              <img src="../images/icons/arrowupanddown.svg" id="drag" />
+              <p>აბსტრაქტული 3</p>
+            </div>
+          </div>
+        </div>
+        <div class="daily-word__full full-dictionary">
+          <a href="#">სრული გლოსარიუმი</a>
+        </div>
+      </div>
     </section>
 
     <footer class="footer">
-        <div class="container footer__inner">
-                <div class="footer__first-row">
-                    <div class="footer__first">
-                        <div class="footer__first__logo">
-                            <img src="../images/icons/logo-white.svg" alt="logo-white">
-                        </div>
-                        <div class="footer__first__socials">
-                            <a href="#"><img src="../images/icons/Instagram.svg" alt="Instagram"></a>
-                            <a href="#"><img src="../images/icons/Linkedin.svg" alt="Linkedin"></a>
-                            <a href="#"><img src="../images/icons/Twitter.svg" alt="Twitter"></a>
-                        </div>
-                        <div class="footer__by__responsive">
-                            <p>გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების ცენტრის დახმარებით ან ინიციატივით. 
-                            </p>
-                        </div>
-                        <div class="footer__first__rights">
-                            <p>ყველა უფლება დაცულია</p>
-                        </div>
-                    </div>
-                    <div class="footer__second">
-                        <div class="footer__second__uls">
-                            <ul>
-                                <a href="../index.html"><li>მთავარი გვერდი</li></a>
-                                <a href="./about_us.html"><li>ჩვენ შესახებ</li></a>
-                                <a href="./glosarium.html"><li>გლოსარიუმი</li></a>
-                                <a href="#"><li>ბლოგი</li></a>
-                            </ul>
-                            <ul>
-                                <li>კონტაქტი:</li>
-                                <a href="#"><li>+995 578 444 333</li></a>
-                                <a href="#"><li>info@glosariumi.ge</li></a>
-                            </ul>
-                            <div class="footer__input footer__input__first">
-                                <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
-                                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
-                                <img src="../images/icons/email-send.svg">
-                            </div>
-                        </div>
-                        <div class="footer__input footer__input__second">
-                            <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა">
-                            <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
-                            <img src="../images/icons/email-send.svg">
-                        </div>
-                        <div class="footer__by footer__by__normal">
-                            <p>გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების ცენტრის დახმარებით ან ინიციატივით. 
-                            </p>
-                        </div>
-                    </div>   
-                </div>  
+      <div class="container footer__inner">
+        <div class="footer__first-row">
+          <div class="footer__first">
+            <div class="footer__first__logo">
+              <img src="../images/icons/logo-white.svg" alt="logo-white" />
+            </div>
+            <div class="footer__first__socials">
+              <a href="#"
+                ><img src="../images/icons/Instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img src="../images/icons/Linkedin.svg" alt="Linkedin"
+              /></a>
+              <a href="#"
+                ><img src="../images/icons/Twitter.svg" alt="Twitter"
+              /></a>
+            </div>
+            <div class="footer__by__responsive">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+            <div class="footer__first__rights">
+              <p>ყველა უფლება დაცულია</p>
+            </div>
+          </div>
+          <div class="footer__second">
+            <div class="footer__second__uls">
+              <ul>
+                <a href="../index.html"><li>მთავარი გვერდი</li></a>
+                <a href="./about_us.html"><li>ჩვენ შესახებ</li></a>
+                <a href="./glosarium.html"><li>გლოსარიუმი</li></a>
+                <a href="#"><li>ბლოგი</li></a>
+              </ul>
+              <ul>
+                <li>კონტაქტი:</li>
+                <a href="#"><li>+995 578 444 333</li></a>
+                <a href="#"><li>info@glosariumi.ge</li></a>
+              </ul>
+              <div class="footer__input footer__input__first">
+                <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" />
+                <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+                <img src="../images/icons/email-send.svg" />
+              </div>
+            </div>
+            <div class="footer__input footer__input__second">
+              <input type="email" placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" />
+              <a href="#">გამოიწერეთ სიახლეები გლოსარიუმის შესახებ</a>
+              <img src="../images/icons/email-send.svg" />
+            </div>
+            <div class="footer__by footer__by__normal">
+              <p>
+                გლოსარიუმი შეიქმნა ლექსიკოგრაფიისა და ენობრივი ტექნოლოგიების
+                ცენტრის დახმარებით ან ინიციატივით.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.js"></script>
     <script src="../js/dragAndMove.js"></script>
     <script src="../js/burgerMenu.js"></script>
-</body>
+  </body>
 </html>
